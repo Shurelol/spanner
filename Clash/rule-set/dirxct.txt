@@ -1,0 +1,4 @@
+payload:
+  - PROCESS-NAME,transmission-qt.exe
+  - PROCESS-NAME,qbittorrent.exe
+  - DOMAIN-SUFFIX,shureserver.cn
