@@ -74,8 +74,24 @@ proxy-groups:
       - airport1 # 机场1
       - airport2 # 机场2
 #---------------------------------------------------#
-# 规则提供商在此设置，默认采用https://github.com/Loyalsoldier/clash-rules，可参考添加自己的rule-set规则集
+# 规则集在此设置，添加数量不限
 rule-providers:
+# 可参考添加自己的rule-set规则集
+  mydirect:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/Shurelol/spanner/main/Clash/rule-set/dirxct.txt
+    path: ./ruleset/mydirect.yaml
+    interval: 300
+
+  myproxy:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/Shurelol/spanner/main/Clash/rule-set/proxy.txt
+    path: ./ruleset/myproxy.yaml
+    interval: 300
+
+# 规则提供商在此设置，默认采用https://github.com/Loyalsoldier/clash-rules
   reject:
     type: http
     behavior: domain
