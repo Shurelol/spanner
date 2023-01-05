@@ -74,7 +74,7 @@ proxy-groups:
       - airport1 # 机场1
       - airport2 # 机场2
 #---------------------------------------------------#
-# 规则集在此设置，添加数量不限
+# 规则集在此设置，添加数量不限，注意规则集的behavior和格式对应
 rule-providers:
 # 可参考添加自己的rule-set规则集
   mydirect:
