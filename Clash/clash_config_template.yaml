@@ -5,6 +5,10 @@ mode: Rule
 log-level: info
 external-controller: :9090 # 管理端口，可用yacd等面板管理
 #---------------------------------------------------#
+# 节点在此设置，添加数量不限
+proxies:
+  - {name: 节点1, server: , port: , type: vmess, uuid: , alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
+  - {name: 节点2, server: , port: , type: vmess, uuid: , alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
 # 代理提供商在此设置，添加数量不限
 # airport1，airport2可改为具体名称
 proxy-providers:
@@ -38,6 +42,8 @@ proxy-groups:
       - 自动选择
       - AIRPORT1 # 机场1代理群
       - AIRPORT2 # 机场2代理群
+      - 节点1
+      - 节点2
 
   - name: AIRPORT1 # 机场1代理群
     type: select
@@ -61,11 +67,14 @@ proxy-groups:
     type: url-test
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
+    proxies:
+      - 节点1
+      - 节点2
     use:
       - airport1 # 机场1
       - airport2 # 机场2
 #---------------------------------------------------#
-# 规则提供商在此设置，默认采用https://github.com/Loyalsoldier/clash-rules，无需修改
+# 规则提供商在此设置，默认采用https://github.com/Loyalsoldier/clash-rules，可参考添加自己的rule-set规则集
 rule-providers:
   reject:
     type: http
@@ -174,9 +183,9 @@ rules:
   # 下面的规则是通过上面的rule-provider来确定的
   # 黑白名单模式二选其一，删除另外一种
   # 黑名单模式（只有命中规则的网络流量，才使用代理）
+  - RULE-SET,applications,DIRECT
   - DOMAIN,clash.razord.top,DIRECT
   - DOMAIN,yacd.haishan.me,DIRECT
-  - RULE-SET,applications,DIRECT
   - RULE-SET,private,DIRECT
   - RULE-SET,reject,REJECT
   - RULE-SET,tld-not-cn,PROXY
@@ -185,9 +194,9 @@ rules:
   - RULE-SET,telegramcidr,PROXY
   - MATCH,DIRECT
   # 白名单模式（没有命中规则的网络流量，统统使用代理）
+  - RULE-SET,applications,DIRECT
   - DOMAIN,clash.razord.top,DIRECT
   - DOMAIN,yacd.haishan.me,DIRECT
-  - RULE-SET,applications,DIRECT
   - RULE-SET,private,DIRECT
   - RULE-SET,reject,REJECT
   - RULE-SET,icloud,DIRECT
