@@ -199,6 +199,8 @@ rules:
   # 下面的规则是通过上面的rule-provider来确定的
   # 黑白名单模式二选其一，删除另外一种
   # 黑名单模式（只有命中规则的网络流量，才使用代理）
+  - RULE-SET,mydirect,DIRECT
+  - RULE-SET,myproxy,PROXY
   - RULE-SET,applications,DIRECT
   - DOMAIN,clash.razord.top,DIRECT
   - DOMAIN,yacd.haishan.me,DIRECT
@@ -210,6 +212,8 @@ rules:
   - RULE-SET,telegramcidr,PROXY
   - MATCH,DIRECT
   # 白名单模式（没有命中规则的网络流量，统统使用代理）
+  - RULE-SET,mydirect,DIRECT
+  - RULE-SET,myproxy,PROXY
   - RULE-SET,applications,DIRECT
   - DOMAIN,clash.razord.top,DIRECT
   - DOMAIN,yacd.haishan.me,DIRECT
