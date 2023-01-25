@@ -195,6 +195,7 @@ rules:
   # 自定义规则在此设置
   - DOMAIN-KEYWORD,onedrive,DIRECT
   - DOMAIN-SUFFIX,themoviedb.org,PROXY
+  - DOMAIN,clash.razord.top,DIRECT
   - DOMAIN,yacd.haishan.me,DIRECT
   # 下面的规则是通过上面的rule-provider来确定的
   # 黑白名单模式二选其一，删除另外一种
@@ -202,8 +203,6 @@ rules:
   - RULE-SET,mydirect,DIRECT
   - RULE-SET,myproxy,PROXY
   - RULE-SET,applications,DIRECT
-  - DOMAIN,clash.razord.top,DIRECT
-  - DOMAIN,yacd.haishan.me,DIRECT
   - RULE-SET,private,DIRECT
   - RULE-SET,reject,REJECT
   - RULE-SET,tld-not-cn,PROXY
@@ -215,8 +214,6 @@ rules:
   - RULE-SET,mydirect,DIRECT
   - RULE-SET,myproxy,PROXY
   - RULE-SET,applications,DIRECT
-  - DOMAIN,clash.razord.top,DIRECT
-  - DOMAIN,yacd.haishan.me,DIRECT
   - RULE-SET,private,DIRECT
   - RULE-SET,reject,REJECT
   - RULE-SET,icloud,DIRECT
