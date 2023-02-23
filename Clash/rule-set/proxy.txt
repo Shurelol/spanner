@@ -44,3 +44,4 @@ payload:
   - DOMAIN-SUFFIX,gnome.org
   - DOMAIN-SUFFIX,gnu.org
   - DOMAIN-SUFFIX,debian.org
+  - DOMAIN-SUFFIX,googleapis.com
