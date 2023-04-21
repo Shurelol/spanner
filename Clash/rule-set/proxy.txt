@@ -45,3 +45,4 @@ payload:
   - DOMAIN-SUFFIX,gnu.org
   - DOMAIN-SUFFIX,debian.org
   - DOMAIN-SUFFIX,googleapis.com
+  - DOMAIN-SUFFIX,mikanani.me
