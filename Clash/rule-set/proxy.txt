@@ -47,4 +47,5 @@ payload:
   - DOMAIN-SUFFIX,mikanani.me
   - DOMAIN-SUFFIX,githubusercontent.com
   - DOMAIN-SUFFIX,cloudreve.org
+  - DOMAIN-SUFFIX,emby.media
 
