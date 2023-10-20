@@ -2,3 +2,4 @@ payload:
   - PROCESS-NAME,transmission-qt.exe
   - PROCESS-NAME,qbittorrent.exe
   - DOMAIN-SUFFIX,b23.tv
+  - DOMAIN-SUFFIX,gitee.com
