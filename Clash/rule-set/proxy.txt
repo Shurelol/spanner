@@ -50,4 +50,7 @@ payload:
   - DOMAIN-SUFFIX,emby.media
   - DOMAIN-SUFFIX,torrentleech.org
   - DOMAIN-SUFFIX,alpinelinux.org
+  - DOMAIN-SUFFIX,gofrp.org
+  - DOMAIN-SUFFIX,theifab.com
+  - DOMAIN-SUFFIX,softether.org
 
