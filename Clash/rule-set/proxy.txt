@@ -53,4 +53,6 @@ payload:
   - DOMAIN-SUFFIX,gofrp.org
   - DOMAIN-SUFFIX,theifab.com
   - DOMAIN-SUFFIX,softether.org
-
+  - DOMAIN-SUFFIX,warcraftlogs.com
+  - DOMAIN-SUFFIX,diskanalyzer.com
+  - DOMAIN-SUFFIX,spacedesk.net

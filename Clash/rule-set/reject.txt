@@ -1,0 +1,7 @@
+payload:
+  - PROCESS-NAME,Acrobat.exe
+  - PROCESS-NAME,AcroCEF.exe
+  - DOMAIN,www.adobe.com
+  - DOMAIN,geo2.adobe.com
+  - DOMAIN,adobeid-na1.services.adobe.com
+  - DOMAIN,ic.adobe.io

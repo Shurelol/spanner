@@ -4,3 +4,4 @@ payload:
   - PROCESS-NAME,yach.exe
   - DOMAIN-SUFFIX,b23.tv
   - DOMAIN-SUFFIX,gitee.com
+  - DOMAIN,scdn.com
