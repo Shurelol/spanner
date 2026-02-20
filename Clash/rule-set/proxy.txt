@@ -1,5 +1,6 @@
 payload:
   - PROCESS-NAME,EmbyServer.exe
+  - DOMAIN-SUFFIX,softether.net
   - DOMAIN-SUFFIX,chocolatey.org
   - DOMAIN-SUFFIX,danmaku.movie.kg
   - DOMAIN-SUFFIX,strawberryperl.com
