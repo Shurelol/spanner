@@ -3,6 +3,7 @@ payload:
   - PROCESS-NAME,qbittorrent.exe
   - PROCESS-NAME,frpc.exe
   - PROCESS-NAME,yach.exe
+  - PROCESS-NAME,python.exe
   - DOMAIN-SUFFIX,b23.tv
   - DOMAIN-SUFFIX,gitee.com
   - DOMAIN,scdn.com
