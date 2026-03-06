@@ -4,6 +4,7 @@ payload:
   - PROCESS-NAME,frpc.exe
   - PROCESS-NAME,yach.exe
   - PROCESS-NAME,python.exe
+  - PROCESS-NAME,aria2c.exe
   - DOMAIN-SUFFIX,b23.tv
   - DOMAIN-SUFFIX,gitee.com
   - DOMAIN,scdn.com
